@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="./assets/icon/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
-  <link rel="shortcut icon" type="image/png" href="./assets/img/shopee.png"/>
+  <link rel="shortcut icon" type="image/png" href="./assets/img/wp.jpg"/>
 </head>
 <body>
   <div class="app">
@@ -352,13 +352,13 @@
                                     </div>
                                     <div class="home-product-item__favorite">
                                       <span class="home-product-item__favorite-like">
-                                        <i class="far fa-heart"></i>
-                                        <!-- <i class="fas fa-heart"></i> -->
+                                        <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                        <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
                                       </span>
                                       <div class="home-product-item__favorite-evaluate">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="home-product-item__star fas fa-star"></i>
+                                        <i class="home-product-item__star fas fa-star"></i>
+                                        <i class="home-product-item__star fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                       </div>
@@ -369,13 +369,15 @@
                                       <span class="home-product-item__description-origin">Nhật bản</span>
                                     </div>
                                     <!-- mác đính kèm trên ảnh  -->
-                                    <div class="home-product-item__favorite">
-                                      <i class="fas fa-check"></i>
-                                      Yêu thích
+                                    <div class="home-product-item__label">
+                                      <span>
+                                        <i class="fas fa-check"></i>
+                                        Yêu thích
+                                      </span>
                                     </div>
                                     <div class="home-product-item__sale-off">
-                                      <span class="home-product-item__sale-off-percent">10%</span>
-                                      <span class="home-product-item__sale-off-lable">GIẢM</span>
+                                      <div class="home-product-item__sale-off-percent">10%</div>
+                                      <div class="home-product-item__sale-off-lable">GIẢM</div>
                                     </div>
                                   </div>
                             </div>
@@ -538,6 +540,12 @@
     const historys = $('.header__search-history')
     historys.onmousedown = function(e){
       e.preventDefault()
+    }
+
+    // XỬ lý phần like sản phẩm
+    const like = $('.home-product-item__favorite-like')    
+    like.onclick = function(){  
+        like.classList.toggle('home-product-item__favorite-liked')
     }
 
 
