@@ -671,6 +671,13 @@
 }
 
 .header__cart-item-name{
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 200px;
+    text-align: initial;
     margin: 0px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -911,7 +918,8 @@
     margin-left: 10px;
     padding: 0 14px;
     min-width: 200px;
-    
+    z-index: 1;
+    cursor: pointer;
 }
 
 .btn-icon{
@@ -931,17 +939,27 @@
 }
 
 .select-input__list{
+
     position: absolute;
-    top:100%;
+    top:103%;
     background-color: var(--White-color);
     margin: 0;
     width: 100%;
     right: 0;
     border-radius:2px ;
-    border-top: 1px solid rgba(0,0,0,0.05);
     padding: 8px 14px;
     display: none;
-    box-shadow:0px 1px 5px rgb(155, 152, 152) ;
+    box-shadow: 0px 1px 2px rgb(204, 201, 201) ;
+}
+
+.select-input__list::after{
+    content: "";
+    position: absolute;
+    top: -1%;
+    left: 0;
+    right: 0;
+    height: 3px;
+
 }
 
 .select-input__item{
@@ -998,16 +1016,24 @@
 /* Sản phẩm */
 
 .home-product-item{
+    text-decoration: none;
+    display: block;
     position: relative;
     background-color: var(--White-color);
     margin-top: 10px;
     border: 1px solid var(--White-color);
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 1px 2px rgba(0 ,0 ,0 ,0.1);
+    transition: transform ease-in 0.1s ;
 }
 
-.home-product-item:hover{
+.home-product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px rgba(0 ,0 ,0 ,0.05);
     border: 1px solid var(--primary-color);
 
 }
+
 
 .home-product-item__img {
     padding-top: 100%;
@@ -1144,8 +1170,10 @@ i.home-product-item__favorite-like-icon-ok{
     right: 0;
     background-color: #fbd435;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 2px 2px 0px;
+    width: 38px;
+    text-align: center;
 }
 
 .home-product-item__sale-off::after{
@@ -1157,11 +1185,13 @@ i.home-product-item__favorite-like-icon-ok{
     top: 100%;
     right: 0;
     left: 0;
+    
 }
 
 .home-product-item__sale-off-percent{
     color: var(--primary-color);
     align-items: center;
+
 }
 
 .home-product-item__sale-off-lable{
