@@ -585,55 +585,57 @@
       </div>
     </div>
 
-    <footer class="footer">
+    <div class="contact">
+         <h2 class="contact-content">LIÊN HỆ VỚI CHÚNG TÔI</h2>
          <div class="grid">
              <div class="grid__row">
               <div class="grid__column-4">
-                <a href="tel:0919295123" class="chat-item-url">
-                  <div class="chat-item-image">
-                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_phone.png?v=406" class="img-responsive" alt="goi-dien">
-                  </div>
-                  <div class="chat-item-text">
-                    Gọi điện
-                  </div>
-                </a>
+                <div class="contact__item-content">
+                <a href="tel:0919295123" class="contact__item-url">
+                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_phone.png?v=406" class="contact__item-content-img" alt="goi-dien">
+                    <h3 class="contact__item-text">
+                      Gọi điện
+                    </h3>
+                  </a>
+                </div>
               </div>
 
               <div class="grid__column-4">
-                <a href="sms:0919295123" class="chat-item-url">
-                  <div class="chat-item-image">
-                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_sms.png?v=406" class="img-responsive" alt="nhan-tin">
-                  </div>
-                  <div class="chat-item-text">
-                    Nhắn tin
-                  </div>
-                </a>
+                <div class="contact__item-content">
+                <a href="sms:0919295123" class="contact__item-url">
+                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_sms.png?v=406" class="contact__item-content-img" alt="nhan-tin">
+                    <h3 class="contact__item-text">
+                      Nhắn tin
+                    </h3>
+                  </a>
+                </div>
               </div>
 
               <div class="grid__column-4">
-                <a href="http://zalo.me/0919295123" class="chat-item-url">
-                  <div class="chat-item-image">
-                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_zalo.png?v=406" class="img-responsive" alt="chat-zalo">
-                  </div>
-                  <div class="chat-item-text">
-                    Chat Zalo
-                  </div>
-                </a>
+                <div class="contact__item-content">
+                <a href="http://zalo.me/0919295123" class="contact__item-url">
+                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_zalo.png?v=406" class="contact__item-content-img" alt="chat-zalo">
+                    <h3 class="contact__item-text">
+                      Chat Zalo
+                    </h3>
+                  </a>
+                </div>
               </div>
 
               <div class="grid__column-4">
-                <a href="http://m.me/Nabidesign2020">
-                  <div class="chat-item-image">
-                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_fb.png?v=406" class="img-responsive" alt="facebook">
-                  </div>
-                  <div class="chat-item-text">
+                <div class="contact__item-content">
+                <a href="http://m.me/Nabidesign2020" class="contact__item-url">
+                    <img src="//theme.hstatic.net/1000391295/1000499396/14/icon_fb.png?v=406" class="contact__item-content-img" alt="facebook">
+                  
+                  <h3 class="contact__item-text">
                     Facebook
-                  </div>
+                  </h3>
                 </a>
+              </div>
               </div>
              </div>
          </div>
-    </footer>
+    </div>
   </div>
 
   <div class="ads" style="height: 500px; background-color: #ccc;">
@@ -792,11 +794,15 @@
     }
 
     // XỬ lý phần like sản phẩm
-    const like = $('.home-product-item__favorite-like')    
-    like.onclick = function(){  
-        like.classList.toggle('home-product-item__favorite-liked')
+    const likes = $$('.home-product-item__favorite-like') 
+    for (var value of Object.values(likes)) {
+      value.onclick = function(e){
+        this.classList.toggle('home-product-item__favorite-liked');
+        console.log(this)
+      }
     }
-
+    
+   
 
 </script>
   

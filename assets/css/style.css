@@ -1104,12 +1104,17 @@
     font-size: 1.2rem;
     color: (--text-color);
     margin-left: 5px;
-    
+    color: var(--text-color);
 
+}
+
+.home-product-item__favorite-like-icon-no{
+    color: var(--text-color);
 }
 
 .home-product-item__favorite-like{
     font-size: 1.2rem;
+    color: var(--text-color);
 }
 
 i.home-product-item__favorite-like-icon-ok{
@@ -1202,3 +1207,32 @@ i.home-product-item__favorite-like-icon-ok{
 }
 
 /* Footer */
+.contact{
+    border-top:1px solid #ccc ;
+}
+
+.contact-content{
+    text-align: center;
+    letter-spacing:2px;
+    word-spacing: 3px;
+    font-size: 2.4rem;
+}
+
+.contact__item-content{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact__item-content-img{
+    width: 60px;
+    color: #ccc;
+}
+
+.contact__item-url{
+    text-decoration: none;
+}
+
+.contact__item-text{
+    margin: 5px 0;
+    color: var(--text-color);
+}
