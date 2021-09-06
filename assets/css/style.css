@@ -1213,18 +1213,20 @@ i.home-product-item__favorite-like-icon-ok{
 
 .contact-content{
     text-align: center;
-    letter-spacing:2px;
-    word-spacing: 3px;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin:0;
+    line-height: 71px;
 }
 
 .contact__item-content{
     text-align: center;
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 .contact__item-content-img{
-    width: 60px;
+    width: 40px;
     color: #ccc;
 }
 
@@ -1233,6 +1235,57 @@ i.home-product-item__favorite-like-icon-ok{
 }
 
 .contact__item-text{
-    margin: 5px 0;
+    margin: 0;
     color: var(--text-color);
+}
+
+.footer{
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+}
+
+.footer__content-heading{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 5px 0;
+}
+
+.footer__content-title{
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+
+
+.footer__content-title{
+    display: block;
+}
+
+.page-facebook{
+    border: 1px solid #999;
+    overflow: hidden; 
+}
+
+.map{
+    border: 1px solid #999;
+    overflow: hidden; 
+}
+
+.btntop{
+    position: fixed;
+    bottom: 70px;
+    right: -28px;
+    cursor: pointer;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+.btntop-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 100%;
+    margin-right:10px ;
 }
