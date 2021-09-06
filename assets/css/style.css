@@ -918,7 +918,6 @@
     margin-left: 10px;
     padding: 0 14px;
     min-width: 200px;
-    z-index: 1;
     cursor: pointer;
 }
 
@@ -950,6 +949,7 @@
     padding: 8px 14px;
     display: none;
     box-shadow: 0px 1px 2px rgb(204, 201, 201) ;
+    z-index: 1;
 }
 
 .select-input__list::after{
@@ -1015,6 +1015,10 @@
 
 /* Sản phẩm */
 
+.home-product{
+   margin-bottom:50px ;
+}
+
 .home-product-item{
     text-decoration: none;
     display: block;
@@ -1055,7 +1059,6 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    
 
 }
 
@@ -1198,3 +1201,4 @@ i.home-product-item__favorite-like-icon-ok{
    color: var(--White-color);
 }
 
+/* Footer */
