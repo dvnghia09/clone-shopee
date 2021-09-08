@@ -1,13 +1,21 @@
 .header {
     height: var(--header-height);
-    background-image: linear-gradient(0,#f63,#f53d2d);
-
+    background-color: var(--White-color);
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 20%);
+    border-bottom:0.5px solid rgb(231, 229, 229) ;
 }
 
 .header__navbar {   
     display: flex;
+    justify-content: center;
+    height: 32px;
+    background-color: #333e48  
+}
+
+.header__navbar-top{
+    display: flex;
     justify-content: space-between;
-    height: 32px;  
+    width: 1200px;
 }
 
 .header__navbar-list{
@@ -425,13 +433,13 @@
 }
 
 .header__logo{
+    padding-top: 18px;
     padding-right: 40px;
     
 }
 
 .header__logo-img{
-   width: 162px;
-   height: 50px;
+   width: 120px;
 }
 
 .header__search{
@@ -441,6 +449,7 @@
     border-radius: 2px;
     display: flex;
     align-items: center;
+    box-shadow: 0 0.225rem 0.5rem rgb(0 0 0 / 20%);
 }
 
 .header__cart{
@@ -450,8 +459,8 @@
 }
 
 .header__cart-icon{
-    color: var(--White-color);
-    font-size: 2.4rem;
+    color: var(--primary-color1);
+    font-size: 2.2rem;
     margin-top: 2px;
     cursor: pointer;
 }
@@ -528,7 +537,7 @@
 }
 
 .header__search-button{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color1);
     border: none;
     outline: none;
     color: var(--White-color);
@@ -570,11 +579,11 @@
     padding: 0px 7px;
     font-size: 1.2rem;
     background-color: var(--White-color);
-    color: var(--primary-color);
+    color: var(--primary-color1);
     border-radius: 50px;
     top: -8px;
     right: -8px;
-    border: 2px solid #EE4D2D;
+    border: 2px solid var(--primary-color1);
 }
 
 .header__cart-wrap:hover .header__cart-list{
@@ -1265,7 +1274,6 @@ i.home-product-item__favorite-like-icon-ok{
 .footer__content-title{
     display: block;
 }
-
 
 .btntop{
     position: fixed;
