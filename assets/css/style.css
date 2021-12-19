@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     height: 32px;
-    background-color: #333e48  
+    background-color: var(--primary-color1) 
 }
 
 .header__navbar-top{
@@ -1282,6 +1282,7 @@ i.home-product-item__favorite-like-icon-ok{
     cursor: pointer;
     align-items: center;
     transform: rotate(-90deg);
+    display: none;
 }
 
 .btntop-title{
@@ -1289,4 +1290,37 @@ i.home-product-item__favorite-like-icon-ok{
     font-weight: 500;
     line-height: 100%;
     margin-right:10px ;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.pagination-item{
+    margin: 0 12px;
+}
+
+.pagination-item__link{
+    display: block;
+   text-decoration: none;
+   font-size: 1.6rem;
+   color: #939393;
+   min-width: 40px;
+   height: 30px;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 2px;
+}
+
+.pagination-item__active  .pagination-item__link{
+    background-color: var(--primary-color1);
+    color: var(--White-color);
+}
+
+.pagination-item__icon{
+    
 }
